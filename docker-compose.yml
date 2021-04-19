@@ -1,0 +1,25 @@
+version: '3.1'
+
+services:
+    db:
+        image: mysql:5.7
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: 3nEruxq3jzAcavxyM4g=apuP3n*
+            MYSQL_DATABASE: petyarn
+            MYSQL_USER: user
+            MYSQL_PASSWORD: r^3m3Jw3Mh5Rq^2E
+    app:
+        build: ./petyarn-service
+        restart: always
+        ports:
+            - 8080:8080
+        depends_on:
+            - db
+        environment: 
+            DATABASE_HOST: db
+            DATABASE_USER: user
+            DATABASE_PASSWORD: r^3m3Jw3Mh5Rq^2E
+            DATABASE_NAME: petyarn
+            WAIT_HOSTS: db:3306
+  

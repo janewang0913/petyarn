@@ -1,0 +1,34 @@
+{
+  "name": "petyarn",
+  "version": "1.0.0",
+  "description": "Node.js, Restful APIs, Express, Sequelize and MySQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha app/tests/*.js --exit"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql",
+    "rest",
+    "api",
+    "sequelize"
+  ],
+  "author": "Jane Wang",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2",
+    "swagger-jsdoc": "6.0.0",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.3.2",
+    "sqlite3": "^5.0.2"
+  }
+}
